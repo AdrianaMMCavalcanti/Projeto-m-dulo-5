@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Modulo 5</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+    <body>
+
+       <section id="secao">
+       
+        <div id="divForm">
+     
+            <label for="color1">Primeira cor</label>
+            <input type="color" id="cor1">
+
+            <label for="color2">Segunda cor</label>
+            <input type="color" id="cor2">
+
+            <label for="qGraus">Quantidade em graus</label>
+            <input type="number" id="qGraus" max="360" min="0">
+
+            <label for="corFonte">Cor da fonte</label>
+            <input type="color" id="corF">
+
+            <label for="textArea">Texto que será exibido </label>
+            <textarea id="tArea" cols="30" rows="10"></textarea>
+
+            <label for="tamanhoFonte">Tamanho em pixels da Fonte</label>
+            <input type="number" id="tFonte">
+
+
+            <button id="botao" onclick="salvar()">Salvar</button>
+
+         </div>
+   
+    </section>
+    
+</body>
+<script src="post.js"></script>
+</html>

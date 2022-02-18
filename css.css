@@ -1,0 +1,71 @@
+:root {
+    --cor-primaria: rgb(180, 199, 183);
+    --cor-um: null;
+    --cor-dois: null;
+    --graus: 45deg;
+    --cor-fonte: null;
+}
+
+.minhaAnimacao{ 
+
+    background-color: linear-gradient(var(--graus), var(--cor-um),var(--cor-dois) );
+    animation: animar 3.5s linear infinite;
+}
+
+    @keyframes animar{
+        0% {
+            background-color: var(--cor-um);
+        }
+        50%{background-color: var(--cor-dois)}
+        100%{background-color:var(--cor-um)}
+    }
+
+    h1{
+        color: brown;
+        font-size: 70px;
+        text-align: center;
+        text-decoration:underline;
+        text-decoration-color: black
+    }
+
+div{
+
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(218, 74, 74);    
+    align-items: center;
+    padding: 40px;
+    border-radius: 70px;
+    width: 600px;
+    margin: 100px auto;
+    height: 0 auto;
+    
+}
+
+#secao {
+    color:var(--cor-fonte);
+}
+
+input {
+    width: 60%;
+    border: var(--cor-primaria);
+    border-radius: 30px;
+    margin: 10px;
+    height: 30px;
+    border-style: groove;
+   
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: var(--cor-primaria)
+}
+
+textarea{
+    padding: 0 60px;
+    
+}
+
